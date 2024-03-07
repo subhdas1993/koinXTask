@@ -35,7 +35,7 @@ function Performance() {
           </div>
         </div>
         <div className='flex justify-start items-center text-gray-700 font-medium text-lg my-3'>Fundamentals<IoInformationCircleSharp className='ml-2' /></div>
-        <div className='fundagrid border-2'>
+        <div className='fundagrid'>
           <div>
             <div>Bitcoin Price</div>
             <div>$16,815.46</div>

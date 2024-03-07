@@ -29,7 +29,7 @@
 }
 
 .fundagrid > div{
-  @apply border-b-2 mx-2 py-3 flex justify-between items-center text-sm font-bold;
+  @apply border-b-2 py-3 flex justify-between items-center text-sm font-bold;
 }
 
 .fundagrid > div > div:first-child{
