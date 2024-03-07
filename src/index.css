@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/********** components/subComponents/Performance.jsx start ************/
+
+.rangebarcolor{
+  @apply w-full h-2 rounded-md;
+  background-image: linear-gradient(to right, red , orange, yellow, lime, green);
+}
+
+.fundagrid{
+  @apply lg:grid lg:grid-cols-2 lg:gap-x-24;
+}
+
+.fundagrid > div{
+  @apply border-b-2 mx-2 py-3 flex justify-between items-center text-sm font-bold;
+}
+
+.fundagrid > div > div:first-child{
+  @apply text-gray-500;
+}
+
+.fundagrid > div:nth-child(8) > div:last-child, 
+.fundagrid > div:nth-child(8) > div:last-child > div, 
+.fundagrid > div:last-child > div:last-child, 
+.fundagrid > div:last-child > div:last-child > div{
+  @apply flex justify-end;
+}
+
+.fundagrid > div:nth-child(8) > div:last-child, 
+.fundagrid > div:last-child > div:last-child{
+  @apply flex-col;
+}
+
+.fundagrid > div:nth-child(8) > div:last-child > div:last-child, 
+.fundagrid > div:last-child > div:last-child > div:last-child{
+  @apply text-xs font-normal;
+}
+
+.fundagrid > div:nth-child(8) > div:last-child > div:first-child > div:first-child, 
+.fundagrid > div:last-child > div:last-child > div:first-child > div:first-child{
+  @apply mr-2;
+}
+
+/********** components/subComponents/Performance.jsx end ************/
+
+/********** components/subComponents/Menus.jsx start ************/
+.menusCustom > div{
+  @apply max-lg:inline-block border-b-2 border-transparent hover:border-[rgb(0,82,254)] p-3;
+} 
+
+.menusCustom > div:first-child{
+  @apply pl-0;
+}
+
+.menusCustom > div:nth-child(even){
+  @apply max-lg:mx-3;
+}
+
+#content::-webkit-scrollbar {
+  @apply hidden;
+}
+
+.menusCustom {
+  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+/********** components/subComponents/Menus.jsx end ************/
+
+/* w-3/4 border-2 p-3 sentimentSlider */
+
+/* .sentimentSlider{
+  @apply h-full;
+} */
+
+.sentimentSlider > div{
+  @apply p-3 bg-sky-200 border flex rounded-xl;
+}
+
+.sseven > div{
+  @apply mx-5 bg-green-200;
+}
+/* .sentimentSlider:nth-child(even) > div{
+  @apply border-8;
+} */
+
+/********** components/subComponents/Menus.jsx start ************/
+
+
+
+/********** components/subComponents/Menus.jsx end ************/
+
+/********** components/subComponents/AboutBitcoin.jsx start ************/
+
+.calStyling > div{
+  @apply p-4 lg:w-1/2 flex justify-between items-center;
+}
+.calStyling > div:first-child{
+  background-image: linear-gradient(to bottom right, rgb(118,237,164), rgb(16,95,173));
+  @apply lg:mr-2 max-lg:mb-2;
+}
+.calStyling > div:last-child{
+  background-image: linear-gradient(to bottom right, rgb(255,151,101), rgb(242,62,57));
+  @apply lg:ml-2;
+}
+
+.titleBtn{
+  @apply w-2/3 max-lg:mt-2 max-lg:px-3;
+}
+
+.titleBtn > div{
+  @apply text-white font-bold text-xl lg:text-3xl mb-4;
+}
+
+.titleBtn > button{
+  @apply text-base lg:text-xl bg-white rounded-md lg:p-3 p-2;
+}
+
+/********** components/subComponents/AboutBitcoin.jsx end ************/
