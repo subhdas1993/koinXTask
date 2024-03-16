@@ -5,6 +5,7 @@ import { IoCloseSharp } from "react-icons/io5";
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false)
   const toggleDrawer = () => setIsOpen(!isOpen);
+
   return (
     <>
       <div className='flex justify-center'>

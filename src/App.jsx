@@ -1,7 +1,4 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import { lazy } from 'react'
+import React, { lazy } from 'react'
 import './App.css'
 import Heading1 from './components/Heading1'
 import MainSections from './components/MainSections'

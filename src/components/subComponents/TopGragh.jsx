@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import TradingViewWidget from './TradingViewWidget';
 
-// https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=inr%2Cusd&include_24hr_change=true
-// https://api.coingecko.com/api/v3/search/trending
 function TopGragh() {
   const [crpto, setCrpto] = useState([]);
   const [cusd, setCusd] = useState("");

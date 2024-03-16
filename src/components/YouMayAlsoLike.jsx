@@ -13,7 +13,6 @@ function YouMayAlsoLike() {
         return res.json();
       })
       .then((data) => {
-        // const firstThree = data.coins.slice(0, 3)
         console.log(data.coins);
         setTrendTop(data.coins);
         console.log(data.nfts);
@@ -22,13 +21,12 @@ function YouMayAlsoLike() {
   }, []);
 
   let settings = {
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 5,
     initialSlide: 0,
-    dots: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -36,24 +34,8 @@ function YouMayAlsoLike() {
           slidesToShow: 2,
           slidesToScroll: 2,
           infinite: true,
-          // dots: true
         }
       },
-      // {
-      //   breakpoint: 600,
-      //   settings: {
-      //     slidesToShow: 2,
-      //     slidesToScroll: 2,
-      //     initialSlide: 2
-      //   }
-      // },
-      // {
-      //   breakpoint: 480,
-      //   settings: {
-      //     slidesToShow: 1,
-      //     slidesToScroll: 1
-      //   }
-      // }
     ]
   };
   return (
@@ -87,9 +69,6 @@ function YouMayAlsoLike() {
             trendTop.map((items, key) => {
               return (
                 <>
-                  {/* <div className='w-10 aspect-square'>
-          {items.item.data.sparkline}
-          </div> */}
                   <div key={key} className='w-4/5 h-24 relative p-2 border-2 rounded-xl'>
                     <div className='absolute z-10'>
                       <div className='flex'><img src={items.item.small} alt={items.item.name} className='w-7 mr-3' />{items.item.name}</div>
@@ -100,6 +79,7 @@ function YouMayAlsoLike() {
             })
           }
         </Slider>
+        <div className='h-10'></div>
       </div>
     </div>
 
